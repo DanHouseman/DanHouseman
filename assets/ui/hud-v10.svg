@@ -7,14 +7,14 @@
     <rect x="1" y="1" width="898" height="120" rx="14" fill="url(#bg)" stroke="#313b68"/>
     <path d="M42 23H858" stroke="url(#line)" stroke-width="1"/>
     <text x="72" y="58" fill="#f4f5ff" font-family="Courier New,monospace" font-size="16" font-weight="700">SCORE</text>
-    <text x="72" y="86" fill="#c66cff" font-family="Courier New,monospace" font-size="25" font-weight="700" filter="url(#glow)">5,920</text>
+    <text x="72" y="86" fill="#c66cff" font-family="Courier New,monospace" font-size="25" font-weight="700" filter="url(#glow)">6,110</text>
     <text x="270" y="58" fill="#f4f5ff" font-family="Courier New,monospace" font-size="16" font-weight="700">LEVEL</text>
     <text x="270" y="86" fill="#67dfff" font-family="Courier New,monospace" font-size="25" font-weight="700" filter="url(#glow)">1</text>
     <text x="420" y="58" fill="#f4f5ff" font-family="Courier New,monospace" font-size="16" font-weight="700">MOVES</text>
-    <text x="420" y="86" fill="#7dffa6" font-family="Courier New,monospace" font-size="25" font-weight="700" filter="url(#glow)">8</text>
+    <text x="420" y="86" fill="#7dffa6" font-family="Courier New,monospace" font-size="25" font-weight="700" filter="url(#glow)">9</text>
     <text x="575" y="58" fill="#f4f5ff" font-family="Courier New,monospace" font-size="16" font-weight="700">SATELLITES</text>
     <text x="575" y="86" fill="#ffd45f" font-family="Courier New,monospace" font-size="25" font-weight="700" filter="url(#glow)">2</text>
-    <text x="760" y="53" text-anchor="middle" fill="#8c91aa" font-family="Courier New,monospace" font-size="10">STATE v9</text>
-    <text x="760" y="76" text-anchor="middle" fill="#d6d8e6" font-family="Courier New,monospace" font-size="11">DanHouseman → F5</text>
+    <text x="760" y="53" text-anchor="middle" fill="#8c91aa" font-family="Courier New,monospace" font-size="10">STATE v10</text>
+    <text x="760" y="76" text-anchor="middle" fill="#d6d8e6" font-family="Courier New,monospace" font-size="11">DanHouseman → F7</text>
     <path d="M42 100H858" stroke="url(#line)" stroke-width="1"/>
   </svg>
