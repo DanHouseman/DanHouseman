@@ -658,6 +658,20 @@
       "resultingLevel": 2,
       "resolution": "continue",
       "levelRestarts": 2
+    },
+    {
+      "issueNumber": 48,
+      "actor": "dxh671",
+      "createdAt": "2026-08-26T18:18:41Z",
+      "requestedCoordinate": "D8",
+      "requestedStateVersion": 43,
+      "accepted": true,
+      "reason": "Move accepted. Chain 5; +250 points; shared score 29750. No legal moves remained. Restarted level 2.",
+      "resultingStateVersion": 44,
+      "resultingScore": 29750,
+      "resultingLevel": 2,
+      "resolution": "restarted",
+      "levelRestarts": 3
     }
   ]
 }
