@@ -1,23 +1,23 @@
 {
-  "version": 35,
+  "version": 36,
   "seed": 24081986,
   "level": 2,
-  "score": 22250,
-  "moves": 34,
+  "score": 22290,
+  "moves": 35,
   "levelRestarts": 2,
   "players": {
     "DanHouseman": {
-      "score": 22250,
-      "moves": 34,
-      "chains": 34,
-      "gemsDestroyed": 215,
+      "score": 22290,
+      "moves": 35,
+      "chains": 35,
+      "gemsDestroyed": 217,
       "largestChain": 15,
       "satellitesRemoved": 28,
       "prismaticGemsCreated": 16,
       "prismaticSatellitesCreated": 4,
       "levelsAdvanced": 1,
       "levelRestarts": 2,
-      "lastMoveAt": "2026-08-26T05:50:39Z"
+      "lastMoveAt": "2026-08-26T05:51:18Z"
     }
   },
   "size": 8,
@@ -28,12 +28,12 @@
   },
   "lastMove": {
     "actor": "DanHouseman",
-    "coord": "B3",
-    "ordinaryGems": 4,
+    "coord": "C8",
+    "ordinaryGems": 2,
     "satellites": 0,
-    "score": 22250,
-    "issueNumber": 36,
-    "createdAt": "2026-08-26T05:50:39Z",
+    "score": 22290,
+    "issueNumber": 37,
+    "createdAt": "2026-08-26T05:51:18Z",
     "resolution": "continue"
   },
   "board": [
@@ -41,13 +41,7 @@
       null,
       null,
       null,
-      {
-        "kind": "gem",
-        "color": 4,
-        "shape": 4,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
+      null,
       {
         "kind": "gem",
         "color": 0,
@@ -86,13 +80,7 @@
         "satellitePrismatic": false
       },
       null,
-      {
-        "kind": "gem",
-        "color": 3,
-        "shape": 3,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
+      null,
       {
         "kind": "gem",
         "color": 4,
@@ -146,15 +134,15 @@
       },
       {
         "kind": "gem",
-        "color": 0,
-        "shape": 0,
+        "color": 3,
+        "shape": 3,
         "satellite": false,
         "satellitePrismatic": false
       },
       {
         "kind": "gem",
-        "color": 0,
-        "shape": 0,
+        "color": 4,
+        "shape": 4,
         "satellite": false,
         "satellitePrismatic": false
       },
@@ -204,16 +192,16 @@
       },
       {
         "kind": "gem",
-        "color": 4,
-        "shape": 4,
-        "satellite": true,
+        "color": 0,
+        "shape": 0,
+        "satellite": false,
         "satellitePrismatic": false
       },
       {
         "kind": "gem",
-        "color": 1,
-        "shape": 1,
-        "satellite": true,
+        "color": 0,
+        "shape": 0,
+        "satellite": false,
         "satellitePrismatic": false
       },
       {
@@ -262,16 +250,16 @@
       },
       {
         "kind": "gem",
-        "color": 3,
-        "shape": 3,
-        "satellite": false,
+        "color": 4,
+        "shape": 4,
+        "satellite": true,
         "satellitePrismatic": false
       },
       {
         "kind": "gem",
-        "color": 0,
-        "shape": 0,
-        "satellite": false,
+        "color": 1,
+        "shape": 1,
+        "satellite": true,
         "satellitePrismatic": false
       },
       {
@@ -320,9 +308,9 @@
       },
       {
         "kind": "gem",
-        "color": 1,
-        "shape": 1,
-        "satellite": true,
+        "color": 3,
+        "shape": 3,
+        "satellite": false,
         "satellitePrismatic": false
       },
       {
@@ -380,13 +368,13 @@
         "kind": "gem",
         "color": 1,
         "shape": 1,
-        "satellite": false,
+        "satellite": true,
         "satellitePrismatic": false
       },
       {
         "kind": "gem",
-        "color": 4,
-        "shape": 4,
+        "color": 0,
+        "shape": 0,
         "satellite": false,
         "satellitePrismatic": false
       },
@@ -436,8 +424,8 @@
       },
       {
         "kind": "gem",
-        "color": 4,
-        "shape": 4,
+        "color": 1,
+        "shape": 1,
         "satellite": false,
         "satellitePrismatic": false
       },
@@ -479,9 +467,9 @@
     ]
   ],
   "replay": {
-    "playIssuesSeen": 36,
-    "accepted": 34,
+    "playIssuesSeen": 37,
+    "accepted": 35,
     "rejected": 2,
-    "lastIssueNumber": 36
+    "lastIssueNumber": 37
   }
 }
