@@ -1,23 +1,23 @@
 {
-  "version": 10,
+  "version": 11,
   "seed": 24081986,
   "level": 1,
-  "score": 6110,
-  "moves": 9,
+  "score": 6250,
+  "moves": 10,
   "levelRestarts": 0,
   "players": {
     "DanHouseman": {
-      "score": 6110,
-      "moves": 9,
-      "chains": 9,
-      "gemsDestroyed": 61,
+      "score": 6250,
+      "moves": 10,
+      "chains": 10,
+      "gemsDestroyed": 63,
       "largestChain": 15,
-      "satellitesRemoved": 5,
+      "satellitesRemoved": 6,
       "prismaticGemsCreated": 4,
       "prismaticSatellitesCreated": 1,
       "levelsAdvanced": 0,
       "levelRestarts": 0,
-      "lastMoveAt": "2026-08-26T04:06:04Z"
+      "lastMoveAt": "2026-08-26T04:06:25Z"
     }
   },
   "size": 8,
@@ -28,15 +28,25 @@
   },
   "lastMove": {
     "actor": "DanHouseman",
-    "coord": "F7",
-    "ordinaryGems": 3,
+    "coord": "F6",
+    "ordinaryGems": 2,
     "satellites": 1,
-    "score": 6110,
-    "issueNumber": 10,
-    "createdAt": "2026-08-26T04:06:04Z",
+    "score": 6250,
+    "issueNumber": 11,
+    "createdAt": "2026-08-26T04:06:25Z",
     "resolution": "continue"
   },
   "board": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
     [
       null,
       null,
@@ -106,26 +116,10 @@
       null,
       null,
       {
-        "kind": "gem",
+        "kind": "shell",
         "color": 2,
         "shape": 2,
         "satellite": true,
-        "satellitePrismatic": false
-      },
-      null,
-      null
-    ],
-    [
-      null,
-      null,
-      null,
-      null,
-      null,
-      {
-        "kind": "gem",
-        "color": 2,
-        "shape": 2,
-        "satellite": false,
         "satellitePrismatic": false
       },
       null,
@@ -174,9 +168,9 @@
     ]
   ],
   "replay": {
-    "playIssuesSeen": 10,
-    "accepted": 9,
+    "playIssuesSeen": 11,
+    "accepted": 10,
     "rejected": 1,
-    "lastIssueNumber": 10
+    "lastIssueNumber": 11
   }
 }

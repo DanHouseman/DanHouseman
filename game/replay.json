@@ -140,6 +140,20 @@
       "resultingLevel": 1,
       "resolution": "continue",
       "levelRestarts": 0
+    },
+    {
+      "issueNumber": 11,
+      "actor": "DanHouseman",
+      "createdAt": "2026-08-26T04:06:25Z",
+      "requestedCoordinate": "F6",
+      "requestedStateVersion": 10,
+      "accepted": true,
+      "reason": "Move accepted. Chain 2; +140 points; shared score 6250.",
+      "resultingStateVersion": 11,
+      "resultingScore": 6250,
+      "resultingLevel": 1,
+      "resolution": "continue",
+      "levelRestarts": 0
     }
   ]
 }
