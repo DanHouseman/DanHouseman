@@ -448,6 +448,20 @@
       "resultingLevel": 1,
       "resolution": null,
       "levelRestarts": 2
+    },
+    {
+      "issueNumber": 33,
+      "actor": "DanHouseman",
+      "createdAt": "2026-08-26T05:48:56Z",
+      "requestedCoordinate": "H8",
+      "requestedStateVersion": 31,
+      "accepted": true,
+      "reason": "Move accepted. Chain 11; +1310 points; shared score 21060.",
+      "resultingStateVersion": 32,
+      "resultingScore": 21060,
+      "resultingLevel": 1,
+      "resolution": "continue",
+      "levelRestarts": 2
     }
   ]
 }
