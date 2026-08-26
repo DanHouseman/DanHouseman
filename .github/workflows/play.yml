@@ -92,7 +92,8 @@ jobs:
           git config user.name "platonic-neighbors-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add game/state.json game/replay.json README.md assets/ui/hud.svg assets/ui/leaderboard.svg
+          git add game/state.json game/replay.json README.md
+          git add -A assets/ui
 
           if git diff --cached --quiet; then
             echo "Projection already matches the complete issue log."

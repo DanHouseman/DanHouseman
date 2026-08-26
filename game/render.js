@@ -76,8 +76,17 @@ function gemMarkup(cell,row,col){
   return `<a href="https://github.com/${owner}/${repo}/issues/new?title=${title}&body=${body}">${picture}</a>`;
 }
 
-fs.writeFileSync(path.join(uiDir,'hud.svg'),hudSvg());
-fs.writeFileSync(path.join(uiDir,'leaderboard.svg'),leaderboardSvg());
+for(const file of fs.readdirSync(uiDir)){
+  if(/^hud-v\d+\.svg$/.test(file)||/^leaderboard-v\d+\.svg$/.test(file)){
+    fs.unlinkSync(path.join(uiDir,file));
+  }
+}
+
+const hudFile=`hud-v${state.version}.svg`;
+const leaderboardFile=`leaderboard-v${state.version}.svg`;
+
+fs.writeFileSync(path.join(uiDir,hudFile),hudSvg());
+fs.writeFileSync(path.join(uiDir,leaderboardFile),leaderboardSvg());
 
 const boardRows=[];
 for(let row=0;row<state.size;row++){
@@ -87,7 +96,7 @@ for(let row=0;row<state.size;row++){
 }
 
 const readme=`<div align="center">
-  <img src="assets/ui/hud.svg?v=${state.version}" width="900" alt="Game status">
+  <img src="assets/ui/${hudFile}" width="900" alt="Game status">
 </div>
 
 <div align="center">
@@ -101,7 +110,7 @@ ${boardRows.join('\n')}
 <br>
 
 <div align="center">
-  <img src="assets/ui/leaderboard.svg?v=${state.version}" width="900" alt="Player leaderboard">
+  <img src="assets/ui/${leaderboardFile}" width="900" alt="Player leaderboard">
 </div>
 
 <br>
