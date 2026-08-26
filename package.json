@@ -1,0 +1,12 @@
+{
+  "name": "danhouseman-profile-platonic-neighbors",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "new-game": "node game/new-game.js",
+    "render": "node game/render.js",
+    "move": "node game/process-move.js",
+    "rebuild": "node game/rebuild-from-issues.js",
+    "assets": "node game/generate-assets.js && node game/generate-static-ui.js"
+  }
+}

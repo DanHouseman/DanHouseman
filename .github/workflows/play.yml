@@ -1,0 +1,131 @@
+name: Play Platonic Neighbors
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: platonic-neighbors-state
+  cancel-in-progress: false
+
+jobs:
+  play:
+    if: startsWith(github.event.issue.title, '[PLAY] Platonic Neighbors')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout latest profile source
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 1
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Fetch complete move log
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api \
+            --paginate \
+            --slurp \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/${GITHUB_REPOSITORY}/issues?state=all&per_page=100&sort=created&direction=asc" \
+            > /tmp/platonic-issues.json
+
+          echo "Fetched issue pages:"
+          node -e "const x=require('/tmp/platonic-issues.json'); console.log(Array.isArray(x)?x.flat().length:0)"
+
+      - name: Rebuild canonical projection from issue history
+        env:
+          ISSUES_FILE: /tmp/platonic-issues.json
+          RESULT_PATH: /tmp/platonic-result.json
+          TRIGGER_ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: node game/rebuild-from-issues.js
+
+      - name: Render projected board
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node game/render.js
+
+      - name: Verify triggering issue was replayed
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat /tmp/platonic-result.json
+          node -e "
+            const r=require('/tmp/platonic-result.json');
+            if (!r.issueNumber) {
+              console.error('Trigger issue was not found in replay.');
+              process.exit(1);
+            }
+          "
+
+      - name: Write move summary
+        shell: bash
+        run: |
+          node - <<'NODE' >> "$GITHUB_STEP_SUMMARY"
+          const fs=require('fs');
+          const r=JSON.parse(fs.readFileSync('/tmp/platonic-result.json','utf8'));
+          console.log(`## Platonic Neighbors move`);
+          console.log(`- Result: **${r.accepted ? 'ACCEPTED' : 'REJECTED'}**`);
+          console.log(`- Reason: ${r.reason}`);
+          console.log(`- Projected state: v${r.resultingStateVersion}`);
+          console.log(`- Score: ${r.resultingScore}`);
+          console.log(`- Level: ${r.resultingLevel}`);
+          NODE
+
+      - name: Commit projection
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "platonic-neighbors-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add game/state.json game/replay.json README.md assets/ui/hud.svg assets/ui/leaderboard.svg
+
+          if git diff --cached --quiet; then
+            echo "Projection already matches the complete issue log."
+          else
+            git commit -m "Replay Platonic Neighbors through issue #${{ github.event.issue.number }}"
+            git push origin HEAD:${{ github.event.repository.default_branch }}
+          fi
+
+      - name: Comment canonical move result
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if [ -f /tmp/platonic-result.json ]; then
+            RESULT="$(node -e "
+              const r=require('/tmp/platonic-result.json');
+              const status=r.accepted?'ACCEPTED':'REJECTED';
+              process.stdout.write(
+                '**Platonic Neighbors: '+status+'**\\n\\n'+
+                r.reason+'\\n\\n'+
+                'Projected state: v'+r.resultingStateVersion+
+                ' · Score '+r.resultingScore+
+                ' · Level '+r.resultingLevel
+              );
+            ")"
+          else
+            RESULT="Platonic Neighbors could not reconstruct the move result."
+          fi
+          gh issue comment "${{ github.event.issue.number }}" --body "$RESULT"
+
+      - name: Close move issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue close "${{ github.event.issue.number }}"

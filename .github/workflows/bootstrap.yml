@@ -1,0 +1,94 @@
+name: Rebuild Platonic Neighbors
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+    paths:
+      - "game/config.json"
+      - "game/engine.js"
+      - "game/render.js"
+      - "game/svg-gem.js"
+      - "game/asset-resolver.js"
+      - "game/generate-assets.js"
+      - "game/generate-static-ui.js"
+      - "game/rebuild-from-issues.js"
+      - "package.json"
+      - ".github/workflows/bootstrap.yml"
+      - ".github/workflows/play.yml"
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: platonic-neighbors-state
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout latest profile source
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 1
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build immutable visual asset library
+        run: |
+          node game/generate-assets.js
+          node game/generate-static-ui.js
+
+      - name: Fetch complete move log
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh api \
+            --paginate \
+            --slurp \
+            -H "Accept: application/vnd.github+json" \
+            "/repos/${GITHUB_REPOSITORY}/issues?state=all&per_page=100&sort=created&direction=asc" \
+            > /tmp/platonic-issues.json
+
+      - name: Rebuild state from issue history
+        env:
+          ISSUES_FILE: /tmp/platonic-issues.json
+        run: node game/rebuild-from-issues.js
+
+      - name: Verify rebuilt projection
+        run: |
+          node -e "const s=require('./game/state.json'); console.log({version:s.version,score:s.score,moves:s.moves,level:s.level,players:Object.keys(s.players||{}),replay:s.replay})"
+
+      - name: Render profile
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node game/render.js
+
+      - name: Commit canonical projection
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "platonic-neighbors-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add game/state.json game/replay.json README.md assets/gems assets/ui/hud.svg assets/ui/leaderboard.svg assets/ui/game-rules.svg assets/ui/how-it-works.svg
+
+          if git diff --cached --quiet; then
+            echo "Repository projection already matches the issue log."
+            exit 0
+          fi
+
+          git commit -m "Rebuild Platonic Neighbors from issue log"
+          git push origin HEAD:${{ github.event.repository.default_branch }}
