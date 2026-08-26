@@ -574,6 +574,34 @@
       "resultingLevel": 2,
       "resolution": null,
       "levelRestarts": 2
+    },
+    {
+      "issueNumber": 42,
+      "actor": "dxh671",
+      "createdAt": "2026-08-26T16:32:52Z",
+      "requestedCoordinate": "D8",
+      "requestedStateVersion": 38,
+      "accepted": true,
+      "reason": "Move accepted. Chain 15; +2550 points; shared score 28690.",
+      "resultingStateVersion": 39,
+      "resultingScore": 28690,
+      "resultingLevel": 2,
+      "resolution": "continue",
+      "levelRestarts": 2
+    },
+    {
+      "issueNumber": 43,
+      "actor": "dxh671",
+      "createdAt": "2026-08-26T16:33:40Z",
+      "requestedCoordinate": "D8",
+      "requestedStateVersion": 38,
+      "accepted": false,
+      "reason": "Stale board. Current state is v39.",
+      "resultingStateVersion": 39,
+      "resultingScore": 28690,
+      "resultingLevel": 2,
+      "resolution": null,
+      "levelRestarts": 2
     }
   ]
 }
