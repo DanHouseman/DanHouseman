@@ -1,4 +1,61 @@
 {
   "generatedAt": null,
-  "events": []
+  "events": [
+    {
+      "issueNumber": 1,
+      "actor": "DanHouseman",
+      "createdAt": "2026-08-26T03:55:12Z",
+      "requestedCoordinate": "E6",
+      "requestedStateVersion": 1,
+      "accepted": true,
+      "reason": "Move accepted. Chain 8; +640 points; shared score 640.",
+      "resultingStateVersion": 2,
+      "resultingScore": 640,
+      "resultingLevel": 1,
+      "resolution": "continue",
+      "levelRestarts": 0
+    },
+    {
+      "issueNumber": 2,
+      "actor": "DanHouseman",
+      "createdAt": "2026-08-26T03:56:33Z",
+      "requestedCoordinate": "H7",
+      "requestedStateVersion": 2,
+      "accepted": true,
+      "reason": "Move accepted. Chain 15; +2350 points; shared score 2990.",
+      "resultingStateVersion": 3,
+      "resultingScore": 2990,
+      "resultingLevel": 1,
+      "resolution": "continue",
+      "levelRestarts": 0
+    },
+    {
+      "issueNumber": 3,
+      "actor": "DanHouseman",
+      "createdAt": "2026-08-26T03:57:13Z",
+      "requestedCoordinate": "E7",
+      "requestedStateVersion": 3,
+      "accepted": true,
+      "reason": "Move accepted. Chain 7; +490 points; shared score 3480.",
+      "resultingStateVersion": 4,
+      "resultingScore": 3480,
+      "resultingLevel": 1,
+      "resolution": "continue",
+      "levelRestarts": 0
+    },
+    {
+      "issueNumber": 4,
+      "actor": "DanHouseman",
+      "createdAt": "2026-08-26T03:57:38Z",
+      "requestedCoordinate": "E7",
+      "requestedStateVersion": 4,
+      "accepted": true,
+      "reason": "Move accepted. Chain 3; +90 points; shared score 3570.",
+      "resultingStateVersion": 5,
+      "resultingScore": 3570,
+      "resultingLevel": 1,
+      "resolution": "continue",
+      "levelRestarts": 0
+    }
+  ]
 }
