@@ -4,6 +4,7 @@
   "level": 1,
   "score": 0,
   "moves": 0,
+  "levelRestarts": 0,
   "players": {},
   "size": 8,
   "shuffleUsed": false,
