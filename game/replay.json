@@ -602,6 +602,20 @@
       "resultingLevel": 2,
       "resolution": null,
       "levelRestarts": 2
+    },
+    {
+      "issueNumber": 44,
+      "actor": "dxh671",
+      "createdAt": "2026-08-26T18:15:20Z",
+      "requestedCoordinate": "C8",
+      "requestedStateVersion": 39,
+      "accepted": true,
+      "reason": "Move accepted. Chain 1; +110 points; shared score 28800.",
+      "resultingStateVersion": 40,
+      "resultingScore": 28800,
+      "resultingLevel": 2,
+      "resolution": "continue",
+      "levelRestarts": 2
     }
   ]
 }
