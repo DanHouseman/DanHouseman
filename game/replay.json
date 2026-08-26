@@ -476,6 +476,20 @@
       "resultingLevel": 1,
       "resolution": "continue",
       "levelRestarts": 2
+    },
+    {
+      "issueNumber": 35,
+      "actor": "DanHouseman",
+      "createdAt": "2026-08-26T05:49:56Z",
+      "requestedCoordinate": "D8",
+      "requestedStateVersion": 33,
+      "accepted": true,
+      "reason": "Move accepted. Chain 3; +290 points; shared score 22090. All satellites cleared. Advanced to level 2.",
+      "resultingStateVersion": 34,
+      "resultingScore": 22090,
+      "resultingLevel": 2,
+      "resolution": "advanced",
+      "levelRestarts": 2
     }
   ]
 }
