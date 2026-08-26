@@ -532,6 +532,48 @@
       "resultingLevel": 2,
       "resolution": "continue",
       "levelRestarts": 2
+    },
+    {
+      "issueNumber": 39,
+      "actor": "dxh671",
+      "createdAt": "2026-08-26T16:00:21Z",
+      "requestedCoordinate": "D7",
+      "requestedStateVersion": 37,
+      "accepted": true,
+      "reason": "Move accepted. Chain 13; +1890 points; shared score 26140.",
+      "resultingStateVersion": 38,
+      "resultingScore": 26140,
+      "resultingLevel": 2,
+      "resolution": "continue",
+      "levelRestarts": 2
+    },
+    {
+      "issueNumber": 40,
+      "actor": "dxh671",
+      "createdAt": "2026-08-26T16:00:48Z",
+      "requestedCoordinate": "E6",
+      "requestedStateVersion": 37,
+      "accepted": false,
+      "reason": "Stale board. Current state is v38.",
+      "resultingStateVersion": 38,
+      "resultingScore": 26140,
+      "resultingLevel": 2,
+      "resolution": null,
+      "levelRestarts": 2
+    },
+    {
+      "issueNumber": 41,
+      "actor": "DanHouseman",
+      "createdAt": "2026-08-26T16:07:51Z",
+      "requestedCoordinate": "E6",
+      "requestedStateVersion": 37,
+      "accepted": false,
+      "reason": "Stale board. Current state is v38.",
+      "resultingStateVersion": 38,
+      "resultingScore": 26140,
+      "resultingLevel": 2,
+      "resolution": null,
+      "levelRestarts": 2
     }
   ]
 }
