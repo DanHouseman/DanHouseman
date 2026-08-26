@@ -1,23 +1,23 @@
 {
-  "version": 21,
+  "version": 22,
   "seed": 24081986,
   "level": 1,
-  "score": 10410,
-  "moves": 20,
+  "score": 11050,
+  "moves": 21,
   "levelRestarts": 1,
   "players": {
     "DanHouseman": {
-      "score": 10410,
-      "moves": 20,
-      "chains": 20,
-      "gemsDestroyed": 109,
+      "score": 11050,
+      "moves": 21,
+      "chains": 21,
+      "gemsDestroyed": 117,
       "largestChain": 15,
       "satellitesRemoved": 15,
-      "prismaticGemsCreated": 7,
+      "prismaticGemsCreated": 8,
       "prismaticSatellitesCreated": 3,
       "levelsAdvanced": 0,
       "levelRestarts": 1,
-      "lastMoveAt": "2026-08-26T04:45:08Z"
+      "lastMoveAt": "2026-08-26T04:45:36Z"
     }
   },
   "size": 8,
@@ -28,12 +28,12 @@
   },
   "lastMove": {
     "actor": "DanHouseman",
-    "coord": "H7",
-    "ordinaryGems": 1,
-    "satellites": 1,
-    "score": 10410,
-    "issueNumber": 21,
-    "createdAt": "2026-08-26T04:45:08Z",
+    "coord": "G8",
+    "ordinaryGems": 8,
+    "satellites": 0,
+    "score": 11050,
+    "issueNumber": 22,
+    "createdAt": "2026-08-26T04:45:36Z",
     "resolution": "continue"
   },
   "board": [
@@ -71,13 +71,7 @@
       null,
       null,
       null,
-      {
-        "kind": "gem",
-        "color": 4,
-        "shape": 4,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
+      null,
       null,
       null,
       null,
@@ -93,20 +87,8 @@
       },
       null,
       null,
-      {
-        "kind": "gem",
-        "color": 1,
-        "shape": 1,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
-      {
-        "kind": "gem",
-        "color": 4,
-        "shape": 4,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
+      null,
+      null,
       null,
       {
         "kind": "gem",
@@ -141,25 +123,13 @@
       },
       {
         "kind": "gem",
-        "color": 4,
-        "shape": 4,
+        "color": 1,
+        "shape": 1,
         "satellite": false,
         "satellitePrismatic": false
       },
-      {
-        "kind": "gem",
-        "color": 4,
-        "shape": 4,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
-      {
-        "kind": "gem",
-        "color": 4,
-        "shape": 4,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
+      null,
+      null,
       {
         "kind": "gem",
         "color": 1,
@@ -204,20 +174,8 @@
         "satellite": false,
         "satellitePrismatic": false
       },
-      {
-        "kind": "gem",
-        "color": 2,
-        "shape": 2,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
-      {
-        "kind": "gem",
-        "color": 4,
-        "shape": 4,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
+      null,
+      null,
       {
         "kind": "gem",
         "color": 1,
@@ -264,8 +222,8 @@
       },
       {
         "kind": "gem",
-        "color": 4,
-        "shape": 4,
+        "color": 2,
+        "shape": 2,
         "satellite": false,
         "satellitePrismatic": false
       },
@@ -277,11 +235,12 @@
         "satellitePrismatic": false
       },
       {
-        "kind": "gem",
+        "kind": "prismatic",
         "color": 4,
         "shape": 4,
         "satellite": false,
-        "satellitePrismatic": false
+        "satellitePrismatic": false,
+        "ringColor": 2
       },
       {
         "kind": "gem",
@@ -293,9 +252,9 @@
     ]
   ],
   "replay": {
-    "playIssuesSeen": 21,
-    "accepted": 20,
+    "playIssuesSeen": 22,
+    "accepted": 21,
     "rejected": 1,
-    "lastIssueNumber": 21
+    "lastIssueNumber": 22
   }
 }
