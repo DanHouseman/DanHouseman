@@ -854,6 +854,20 @@
       "resultingLevel": 2,
       "resolution": "continue",
       "levelRestarts": 4
+    },
+    {
+      "issueNumber": 62,
+      "actor": "DanHouseman",
+      "createdAt": "2026-09-01T04:23:02Z",
+      "requestedCoordinate": "G8",
+      "requestedStateVersion": 56,
+      "accepted": true,
+      "reason": "Move accepted. Chain 5; +250 points; shared score 45560.",
+      "resultingStateVersion": 57,
+      "resultingScore": 45560,
+      "resultingLevel": 2,
+      "resolution": "continue",
+      "levelRestarts": 4
     }
   ]
 }
