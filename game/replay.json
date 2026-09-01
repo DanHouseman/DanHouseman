@@ -770,6 +770,20 @@
       "resultingLevel": 2,
       "resolution": "continue",
       "levelRestarts": 3
+    },
+    {
+      "issueNumber": 56,
+      "actor": "DanHouseman",
+      "createdAt": "2026-09-01T04:19:54Z",
+      "requestedCoordinate": "E7",
+      "requestedStateVersion": 50,
+      "accepted": true,
+      "reason": "Move accepted. Chain 2; +40 points; shared score 39840. No legal moves remained. Restarted level 2.",
+      "resultingStateVersion": 51,
+      "resultingScore": 39840,
+      "resultingLevel": 2,
+      "resolution": "restarted",
+      "levelRestarts": 4
     }
   ]
 }
