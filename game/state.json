@@ -516,9 +516,9 @@
     ]
   ],
   "replay": {
-    "playIssuesSeen": 90,
+    "playIssuesSeen": 91,
     "accepted": 81,
-    "rejected": 9,
-    "lastIssueNumber": 90
+    "rejected": 10,
+    "lastIssueNumber": 91
   }
 }
