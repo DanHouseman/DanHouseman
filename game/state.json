@@ -1,9 +1,9 @@
 {
-  "version": 70,
+  "version": 71,
   "seed": 24081986,
   "level": 2,
-  "score": 55120,
-  "moves": 69,
+  "score": 55210,
+  "moves": 70,
   "levelRestarts": 5,
   "players": {
     "DanHouseman": {
@@ -20,17 +20,17 @@
       "lastMoveAt": "2026-09-05T04:43:06Z"
     },
     "dxh671": {
-      "score": 6310,
-      "moves": 8,
-      "chains": 8,
-      "gemsDestroyed": 57,
+      "score": 6400,
+      "moves": 9,
+      "chains": 9,
+      "gemsDestroyed": 60,
       "largestChain": 15,
       "satellitesRemoved": 6,
       "prismaticGemsCreated": 3,
       "prismaticSatellitesCreated": 2,
       "levelsAdvanced": 0,
       "levelRestarts": 1,
-      "lastMoveAt": "2026-08-26T18:20:23Z"
+      "lastMoveAt": "2026-09-09T18:50:16Z"
     }
   },
   "size": 8,
@@ -40,13 +40,13 @@
     "prismThreshold": 8
   },
   "lastMove": {
-    "actor": "DanHouseman",
-    "coord": "C8",
-    "ordinaryGems": 4,
+    "actor": "dxh671",
+    "coord": "C6",
+    "ordinaryGems": 3,
     "satellites": 0,
-    "score": 55120,
-    "issueNumber": 76,
-    "createdAt": "2026-09-05T04:43:06Z",
+    "score": 55210,
+    "issueNumber": 78,
+    "createdAt": "2026-09-09T18:50:16Z",
     "resolution": "continue"
   },
   "board": [
@@ -103,8 +103,18 @@
     [
       null,
       null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
       {
-        "kind": "gem",
+        "kind": "shell",
         "color": 3,
         "shape": 3,
         "satellite": false,
@@ -119,28 +129,6 @@
     [
       null,
       null,
-      {
-        "kind": "gem",
-        "color": 3,
-        "shape": 3,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    [
-      null,
-      {
-        "kind": "gem",
-        "color": 3,
-        "shape": 3,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
       {
         "kind": "gem",
         "color": 1,
@@ -175,9 +163,9 @@
     ]
   ],
   "replay": {
-    "playIssuesSeen": 77,
-    "accepted": 69,
+    "playIssuesSeen": 78,
+    "accepted": 70,
     "rejected": 8,
-    "lastIssueNumber": 77
+    "lastIssueNumber": 78
   }
 }
