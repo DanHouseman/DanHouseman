@@ -1526,6 +1526,20 @@
       "resultingLevel": 3,
       "resolution": "continue",
       "levelRestarts": 6
+    },
+    {
+      "issueNumber": 110,
+      "actor": "dxh671",
+      "createdAt": "2026-09-15T18:27:03Z",
+      "requestedCoordinate": "F8",
+      "requestedStateVersion": 97,
+      "accepted": true,
+      "reason": "Move accepted. Chain 2; +40 points; shared score 65720. No moves remained. Used the level rescue shuffle.",
+      "resultingStateVersion": 98,
+      "resultingScore": 65720,
+      "resultingLevel": 3,
+      "resolution": "shuffled",
+      "levelRestarts": 6
     }
   ]
 }
