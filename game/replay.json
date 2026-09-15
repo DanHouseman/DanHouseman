@@ -1512,6 +1512,20 @@
       "resultingLevel": 3,
       "resolution": null,
       "levelRestarts": 6
+    },
+    {
+      "issueNumber": 109,
+      "actor": "dxh671",
+      "createdAt": "2026-09-15T18:26:42Z",
+      "requestedCoordinate": "C7",
+      "requestedStateVersion": 96,
+      "accepted": true,
+      "reason": "Move accepted. Chain 3; +90 points; shared score 65680.",
+      "resultingStateVersion": 97,
+      "resultingScore": 65680,
+      "resultingLevel": 3,
+      "resolution": "continue",
+      "levelRestarts": 6
     }
   ]
 }

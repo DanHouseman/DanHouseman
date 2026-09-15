@@ -1,9 +1,9 @@
 {
-  "version": 96,
+  "version": 97,
   "seed": 24081986,
   "level": 3,
-  "score": 65590,
-  "moves": 95,
+  "score": 65680,
+  "moves": 96,
   "levelRestarts": 6,
   "players": {
     "DanHouseman": {
@@ -20,17 +20,17 @@
       "lastMoveAt": "2026-09-15T04:49:56Z"
     },
     "dxh671": {
-      "score": 13130,
-      "moves": 22,
-      "chains": 22,
-      "gemsDestroyed": 133,
+      "score": 13220,
+      "moves": 23,
+      "chains": 23,
+      "gemsDestroyed": 136,
       "largestChain": 15,
       "satellitesRemoved": 13,
       "prismaticGemsCreated": 7,
       "prismaticSatellitesCreated": 3,
       "levelsAdvanced": 1,
       "levelRestarts": 2,
-      "lastMoveAt": "2026-09-15T18:26:11Z"
+      "lastMoveAt": "2026-09-15T18:26:42Z"
     }
   },
   "size": 8,
@@ -41,12 +41,12 @@
   },
   "lastMove": {
     "actor": "dxh671",
-    "coord": "E8",
-    "ordinaryGems": 2,
+    "coord": "C7",
+    "ordinaryGems": 3,
     "satellites": 0,
-    "score": 65590,
-    "issueNumber": 107,
-    "createdAt": "2026-09-15T18:26:11Z",
+    "score": 65680,
+    "issueNumber": 109,
+    "createdAt": "2026-09-15T18:26:42Z",
     "resolution": "continue"
   },
   "board": [
@@ -93,13 +93,17 @@
     [
       null,
       null,
-      {
-        "kind": "gem",
-        "color": 2,
-        "shape": 2,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
       null,
       null,
       null,
@@ -110,23 +114,7 @@
       null,
       null,
       {
-        "kind": "gem",
-        "color": 2,
-        "shape": 2,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
-      null,
-      null,
-      null,
-      null,
-      null
-    ],
-    [
-      null,
-      null,
-      {
-        "kind": "gem",
+        "kind": "shell",
         "color": 2,
         "shape": 2,
         "satellite": false,
@@ -180,9 +168,9 @@
     ]
   ],
   "replay": {
-    "playIssuesSeen": 108,
-    "accepted": 95,
+    "playIssuesSeen": 109,
+    "accepted": 96,
     "rejected": 13,
-    "lastIssueNumber": 108
+    "lastIssueNumber": 109
   }
 }
