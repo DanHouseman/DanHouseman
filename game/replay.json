@@ -1470,6 +1470,20 @@
       "resultingLevel": 3,
       "resolution": "continue",
       "levelRestarts": 6
+    },
+    {
+      "issueNumber": 106,
+      "actor": "dxh671",
+      "createdAt": "2026-09-15T18:25:58Z",
+      "requestedCoordinate": "E7",
+      "requestedStateVersion": 94,
+      "accepted": false,
+      "reason": "Stale board. Current state is v95.",
+      "resultingStateVersion": 95,
+      "resultingScore": 65550,
+      "resultingLevel": 3,
+      "resolution": null,
+      "levelRestarts": 6
     }
   ]
 }
