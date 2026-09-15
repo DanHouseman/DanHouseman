@@ -1554,6 +1554,20 @@
       "resultingLevel": 3,
       "resolution": null,
       "levelRestarts": 6
+    },
+    {
+      "issueNumber": 112,
+      "actor": "dxh671",
+      "createdAt": "2026-09-15T18:27:38Z",
+      "requestedCoordinate": "E5",
+      "requestedStateVersion": 98,
+      "accepted": true,
+      "reason": "Move accepted. Chain 2; +140 points; shared score 65860. All satellites cleared. Advanced to level 4.",
+      "resultingStateVersion": 99,
+      "resultingScore": 65860,
+      "resultingLevel": 4,
+      "resolution": "advanced",
+      "levelRestarts": 6
     }
   ]
 }
