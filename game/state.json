@@ -1,23 +1,23 @@
 {
-  "version": 92,
+  "version": 93,
   "seed": 24081986,
   "level": 3,
-  "score": 65210,
-  "moves": 91,
+  "score": 65350,
+  "moves": 92,
   "levelRestarts": 6,
   "players": {
     "DanHouseman": {
-      "score": 52160,
-      "moves": 71,
-      "chains": 71,
-      "gemsDestroyed": 474,
+      "score": 52300,
+      "moves": 72,
+      "chains": 72,
+      "gemsDestroyed": 476,
       "largestChain": 18,
-      "satellitesRemoved": 53,
+      "satellitesRemoved": 54,
       "prismaticGemsCreated": 29,
       "prismaticSatellitesCreated": 9,
       "levelsAdvanced": 1,
       "levelRestarts": 4,
-      "lastMoveAt": "2026-09-15T04:48:10Z"
+      "lastMoveAt": "2026-09-15T04:49:07Z"
     },
     "dxh671": {
       "score": 13050,
@@ -41,12 +41,12 @@
   },
   "lastMove": {
     "actor": "DanHouseman",
-    "coord": "D5",
-    "ordinaryGems": 4,
+    "coord": "D6",
+    "ordinaryGems": 2,
     "satellites": 1,
-    "score": 65210,
-    "issueNumber": 102,
-    "createdAt": "2026-09-15T04:48:10Z",
+    "score": 65350,
+    "issueNumber": 103,
+    "createdAt": "2026-09-15T04:49:07Z",
     "resolution": "continue"
   },
   "board": [
@@ -105,13 +105,7 @@
         "satellite": false,
         "satellitePrismatic": false
       },
-      {
-        "kind": "gem",
-        "color": 3,
-        "shape": 3,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
+      null,
       null,
       null,
       null,
@@ -133,20 +127,8 @@
         "satellite": false,
         "satellitePrismatic": false
       },
-      {
-        "kind": "gem",
-        "color": 3,
-        "shape": 3,
-        "satellite": false,
-        "satellitePrismatic": false
-      },
-      {
-        "kind": "shell",
-        "color": 4,
-        "shape": 4,
-        "satellite": true,
-        "satellitePrismatic": false
-      },
+      null,
+      null,
       null,
       null,
       {
@@ -247,9 +229,9 @@
     ]
   ],
   "replay": {
-    "playIssuesSeen": 102,
-    "accepted": 91,
+    "playIssuesSeen": 103,
+    "accepted": 92,
     "rejected": 11,
-    "lastIssueNumber": 102
+    "lastIssueNumber": 103
   }
 }
