@@ -1400,6 +1400,20 @@
       "resultingLevel": 3,
       "resolution": "continue",
       "levelRestarts": 6
+    },
+    {
+      "issueNumber": 101,
+      "actor": "DanHouseman",
+      "createdAt": "2026-09-15T04:47:49Z",
+      "requestedCoordinate": "C7",
+      "requestedStateVersion": 90,
+      "accepted": true,
+      "reason": "Move accepted. Chain 3; +90 points; shared score 64950.",
+      "resultingStateVersion": 91,
+      "resultingScore": 64950,
+      "resultingLevel": 3,
+      "resolution": "continue",
+      "levelRestarts": 6
     }
   ]
 }
