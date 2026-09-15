@@ -1358,6 +1358,20 @@
       "resultingLevel": 3,
       "resolution": "continue",
       "levelRestarts": 6
+    },
+    {
+      "issueNumber": 98,
+      "actor": "DanHouseman",
+      "createdAt": "2026-09-15T04:46:22Z",
+      "requestedCoordinate": "H7",
+      "requestedStateVersion": 87,
+      "accepted": false,
+      "reason": "Stale board. Current state is v88.",
+      "resultingStateVersion": 88,
+      "resultingScore": 64410,
+      "resultingLevel": 3,
+      "resolution": null,
+      "levelRestarts": 6
     }
   ]
 }
